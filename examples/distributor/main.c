@@ -116,6 +116,8 @@ port_init(uint16_t port, struct rte_mempool *mbuf_pool)
 	struct rte_eth_dev_info dev_info;
 	struct rte_eth_txconf txconf;
 
+	printf("rte_eth_dev_count: %u\n", rte_eth_dev_count());
+
 	if (port >= rte_eth_dev_count())
 		return -1;
 

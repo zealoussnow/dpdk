@@ -3,6 +3,7 @@
 
 # binary name
 APP = helloworld
+V = 1
 
 # all source are stored in SRCS-y
 SRCS-y := main.c
